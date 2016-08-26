@@ -109,6 +109,11 @@ global $base_url;
               <li><a href="#"> French </a></li>
               </ul>
             </li>
+            <ul>
+              <?php if (!empty($page['language'])): ?>
+              <?php print render($page['language']); ?>
+              <?php endif; ?>
+            </ul>
           </ul>
           </div>
          </div>
@@ -135,22 +140,17 @@ global $base_url;
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
-        <nav role="navigation">
+        <!-- <nav role="navigation"> -->
           <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
+            <?php // print render($primary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
+            <?php // print render($secondary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
-              <?php if (empty($logged_in)): ?>
-                <div id="show_li">
-                  <a href="#">Log In</a>
-                </div>
-              <?php endif; ?>
           <?php endif; ?>
-        </nav>
+        <!-- </nav> -->
       </div>
     <?php endif; ?>
   </div>
@@ -183,6 +183,7 @@ global $base_url;
         <?php print render($page['slide_show']); ?>
       </aside>  <!-- /#slide_show -->
     <?php endif; ?>
+</div>
 
 
 
@@ -224,12 +225,23 @@ global $base_url;
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php if (!empty($page['content']) && empty($is_front)): ?>
+
+            <?php if (!empty($page['tech_slider'])): ?>
+
+            <div class="col-md-8 tech_slider">
+            <?php print render($page['tech_slider']); ?>
+
+            </div>
+              <!-- /#slide_show -->
+      <?php endif; ?>
+      <?php if (!empty($page['content']) && !($is_front)): ?>
         <div class="back">
       <?php print render($page['content']); ?>
       </div>
       <?php endif; ?>
+
     </section>
+
 
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
@@ -237,12 +249,15 @@ global $base_url;
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
 
+
     <?php if (!empty($page['footer_1st'])): ?>
         <div class="col-sm-12">
         <?php print render($page['footer_1st']); ?>
         </div>
         <!-- /bottom_footer -->
     <?php endif; ?>
+
+
 
         <?php if (!empty($page['footer_2nd(a)'])): ?>
       <aside class="footer_2nd col-sm-3 " role="complementary">
@@ -280,14 +295,13 @@ global $base_url;
       </aside>
         <!-- /#footer_2nd(d) -->
     <?php endif; ?>
-    <?php if (!empty($page['footer_3rd'])): ?>
+  </div>
+</div>
+<?php if (!empty($page['footer_3rd'])): ?>
       <div class="footer_3rd">
     <?php print render($page['footer_3rd']); ?>
   </div>
 <?php endif; ?>
-  </div>
-</div>
-
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>

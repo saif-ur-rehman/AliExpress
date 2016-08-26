@@ -4,79 +4,9 @@
  body{
   /*background:url(../images/back.png);*/
  }
-#edit-search-block-form--2{
-  margin-right: 330px;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  background-color: #e3f2fd;
-  color: black;
-}
 .hilight{
   background-color: #FEEA88;
 }
-.nav-firstblank{
-
-width: 100%;
-height:70px;
-background-color: rgb(228, 228, 228);
-
-}
-
-.nav-first{
-background-color: rgb(242, 242, 242);
-
-border:none;
-border-bottom: 1px solid rgb(228, 228, 228);
-
-}
-
-.nav-first  li{
-
-  border-right: 1px solid rgb(228, 228, 228);
-
-}
-.navbar li a:link{
-
-  border-left:2px solid rgb(228, 228, 228)
-color: #000;
-
-}
-.navbar .nav > li > a:hover {
-
-    color: #cc0000;
-}
- .navbar-default .navbar-nav > .active > a,
- .navbar-default .navbar-nav > .active > a:hover,
- .navbar-default .navbar-nav > .active > a:focus {
-      color: #000;
-
- }
-.navbar li a:visited{
-color: rgb(128, 128, 128)
-}
-
-
-/*Secondary Bar Logo , Search , Cart Wish List Cart*/
-.secondary li a:link{
-
-color: #000;
-background-color: transparent;
-}
-.secondary > .active > a,
-.secondaryv > .active > a:hover,
-.secondary > .active > a:focus {
-      color: #000;
-
- }
-
-
-
-
-.secondary > li > a:hover {
-
-    color: #cc0000;
-}
-
 .whole{
  background-color: #eeeeee;
 }
@@ -188,30 +118,8 @@ background-color: transparent;
 #toopbar li a:hover{
   color: #cc0000;
 }
-
-#sidebar-first li a{
-  margin-top: -5px;
-  margin-bottom: -5px;
-  color: black;
-}
-#sidebar-first ul li:hover{
-  border-bottom: 1px solid gray;
-  border-top: 1px solid gray;
-}
-#sidebar-first li a:hover{
-    color: #cc0000;
-    background-color: transparent;
-}
-#sidebar-first .dropdown-menu{
-  display: none;
-}
-#sidebar-first ul li:hover .dropdown-menu{
-  display: block;
-  margin-top: -19%;
-  margin-left: 60%;
-}
 #sidebar-first .caret{
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .overflow{
   overflow: hidden;
@@ -272,6 +180,97 @@ background-color: transparent;
 .smb .block-title{
   font-size: 20px;
 }
+.footer_3rd{
+  overflow: hidden;
+  padding-left: 5%;
+  background-color: #e8e8e8;
+}
+.footer_3rd ul li{
+  display: inline-block;
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+.footer_3rd ul li a{
+  color: gray;
+  padding: 0px;
+  margin: 0px;
+}
+.footer_3rd ul li a:hover{
+  background: transparent;
+  color: orange;
+}
+#block-menu-menu-help , #block-menu-menu-aliexpress-multi-language-s , #block-menu-menu-browse-by-category{
+  float: left;
+  margin-right: 10%;
+}
+#block-menu-menu-help h2 , #block-menu-menu-aliexpress-multi-language-s h2 , #block-menu-menu-browse-by-category h2{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#block-tb-megamenu-user-menu{
+  background: white;
+  float: right;
+}
+#block-search-form{
+  padding-right: 500px;
+  width: 300px;
+  padding-top: 10px;
+}
+#edit-search-block-form--2{
+  margin-right: 200px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #e3f2fd;
+  color: black;
+}
+
+
+#block-tb-megamenu-menu-left-side-bar li a{
+  color: gray;
+  border:none;
+  background: transparent;
+}
+#block-tb-megamenu-menu-left-side-bar ul{
+  background: white;
+}
+#block-tb-megamenu-menu-left-side-bar li a:hover{
+  color: #cc0000;
+  width: 100%;
+  background-color: transparent;
+}
+#block-tb-megamenu-menu-left-side-bar .mega-dropdown-menu{
+  top: 0%;
+  left: 120%;
+}
+#block-tb-megamenu-menu-left-side-bar .mega-dropdown-menu .mega-group-title{
+  border-bottom: 1px solid #e8e8e8 ;
+}
+#block-tb-megamenu-menu-left-side-bar .mega-dropdown-menu ul a:hover{
+  color:#fe6600;
+}
+.tech_slider{
+  margin-bottom: 30px;
+  height:
+}
+.tech_slider img {
+  height: 200px;
+  width: 200px;
+}
+
+
+/*#sidebar-first ul li:hover{
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  mega-dropdown-inner
+  tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child
+}*/
+/*#sidebar-first li a:hover{
+  color: #cc0000;
+  background-color: transparent;
+}*/
+
+
 /*#block-user-login{
   display: none;
   background-color: black;

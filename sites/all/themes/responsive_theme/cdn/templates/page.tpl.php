@@ -138,10 +138,10 @@ global $base_url;
       <div class="navbar-collapse collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
+            <?php // print render($primary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
+            <?php // print render($secondary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
@@ -251,9 +251,14 @@ global $base_url;
       </aside>
         <!-- /#footer_2nd(d) -->
     <?php endif; ?>
+
   </div>
 </div>
-
+ <?php if (!empty($page['footer_3rd'])): ?>
+      <div class="footer_3rd">
+    <?php print render($page['footer_3rd']); ?>
+  </div>
+<?php endif; ?>
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
